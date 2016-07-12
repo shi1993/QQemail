@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app='myapp'>
+<head>
+    <meta charset="UTF-8">
+    <title>QQEmail</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="logo">
+            <a ui-sref='home'>
+                <img src="images/logo.gif">
+            </a>
+        </div>
+        <div class="user">
+            <div class="user-top">
+                <b>石文东</b>
+                <a href="">
+                    < 81677870@qq.com><small>▼</small></a>
+            </div>
+            <div class="user-btm">
+                <a ui-sref='home'>邮箱首页</a> |
+                <a href="">设置</a>
+                <a href="">换肤</a>
+            </div>
+        </div>
+        <div class="h-r">
+            <div class="hr-top">
+                <a href=""><i></i></a> |
+                <a href="">反馈建议</a> |
+                <a href="">帮助中心</a> |
+                <a href="">退出</a>
+            </div>
+            <div class="hr-btm">
+                <div class="hrw">
+                    <span class="search"></span>
+                    <span class="dropd"></span>
+                    <input type="text" placeholder="邮件搜索。。。">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="center">
+        <div class="bd">
+            <div class="bd-left"></div>
+        </div>
+        <div class="menu">
+            <ul class="menu-top">
+                <li>
+                	<i class="i1"></i>
+                	<a ui-sref='xx.normal'>写信</a>
+                </li>
+                <li>
+                	<i class="i2"></i>
+                	<a ui-sref='sx'>收信</a>
+                </li>
+                <li>
+                	<i class="i3"></i>
+                	<a ui-sref='txl'>通讯录</a>
+                </li>
+            </ul>
+            <div class="menu-btm-warp">
+            	<div class="menu-btm">
+            		<ul class="mul1">
+            			<li>
+            				<a href="">收件箱</a>
+            			</li>
+            			<li>
+            				<a href="">重要联系人 <i class="zy"></i></a>
+            			</li>
+            			<li>
+            				<a href="">星标邮件 <i class="xb"></i></a>
+            			</li>
+            			<li>
+            				<a href="">群邮件</a>
+            			</li>
+            			<li>
+            				<a href="">草稿箱</a>
+            			</li>
+            			<li>
+            				<a href="">已发送</a>
+            			</li>
+            			<li>
+            				<a href="">已删除</a>
+            			</li>
+            			<li>
+            				<a href=""><b>垃圾箱(1)</b> <span class="r">[清空]</span></a>
+            			</li>
+            			<li>
+            				<a href=""><b>QQ邮件订阅(6)</b></a>
+            			</li>
+            		</ul>
+            		<div class="line"></div>
+            		<ul class="mul2">
+            			<li>
+            				<a href="">其他邮箱</a>
+            			</li>
+            		</ul>
+            		<div class="line"></div>
+            		<ul class="mul3">
+            			<li>
+            				<a href=""><b>漂流瓶(1)</b> <i class="pl"></i></a>
+            			</li>
+            			<li>
+            				<a href="" class="sa">贺卡</a>
+            				<span class="sx">|</span>
+            				<a href="" class="a2 sa">明信片</a>
+            			</li>
+            			<li>
+            				<a href=""  class="sa">日历</a>
+            				<span class="sx">|</span>
+            				<a href="" class="a2 sa">记事本</a>
+            			</li>
+            			<li>
+            				<a href="">附件收藏</a>
+            			</li>
+            			<li>
+            				<a href="">文件中转站</a>
+            			</li>
+            			<li>
+            				<a href="">简历</a>
+            			</li>
+            			<li>
+            				<a href=""><b>阅读空间(85)</b></a>
+            			</li>
+            		</ul>
+            	</div>
+            </div>
+            <div class="bdbtm"></div>
+        </div>
+        <div class="content" ui-view>
+        </div>
+    </div>
+
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="module/app.js"></script>
+</body>
+
+
+</html>
